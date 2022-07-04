@@ -9,14 +9,10 @@ client.login(process.env.DISCORD_ACCESS_KEY)
 // This lets us know we're ready to rock
 client.on('ready', () => {
     console.log(`logged in as ${client.user.tag}`);
-    client.user.setActivity("Hello world");
-    // incoming message handler
-
-
-    client.on("interactionCreate", () => {
-        console.log("I should be seeing this happen");
-    });
-    
-    
+    client.user.setActivity("Actively Deployed");
 });
+
+// client.on("interaction", () => {
+//     console.log("I should be seeing this happen");
+// });
 
